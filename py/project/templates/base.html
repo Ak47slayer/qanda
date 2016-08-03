@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+ <title>{% block page_title %}Your site{% endblock %}</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+ </head>
+
+ <ul class="nav nav-tabs">
+
+    
+         <li role="presentation" class="active"><a href="{{ url_for('home) }}">Home</a></li>
+         </ul>
+ </nav>
+
+ <div class="{% block navbar %}container{% endblock nav %}"
+
+      <div class="content" role="main">
+         {% block content %}{% endblock %}
+      </div>
+
+ </div>
+ </script src="{{ url_for('static, filename='js/script.js') }}">
+ </script>
+ </body>
+ </html>

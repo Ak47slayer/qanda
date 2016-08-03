@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <div class="page-header">
+  	<h3>Ask your question</h3>
+	</div>
+	</head>
+{% include 'header.html' %}
+<body>
+<div class="container">
+<form action="/ask" method="post">
+    <div class="input-group">
+ 	<span class="input-group-addon" id="basic-addon1">Ask a question</span>
+  	<input type="text" class="form-control" aria-describedby="basic-addon1" name="subject">
+	</div>
+
+    <div class="input-group">
+ 	<span class="input-group-addon" id="basic-addon1">Add some details</span>
+  	<textarea type="text" class="form-control"  aria-describedby="basic-addon1" name="body"></textarea>
+  	</div>
+  	<div>
+     <button type="submit" class="btn btn-default">Add</button>
+    </div>
+    
+</form>
+</body>
+</div>
+</html>
+
